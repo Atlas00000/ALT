@@ -4,13 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Otter Essay</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #202020, #3a3a3a); /* Smooth dark gradient */
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      color: #333;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-heading {
+      background-color: #ff007f; /* Brighter and more elegant pink */
+      color: #ffffff;
+      padding: 8px 15px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 6px;
+      position: absolute;
+      top: -12px;
+      left: 15px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 15px;
+      }
+      
+      .card-heading {
+        font-size: 18px;
+        padding: 6px 12px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="card">
     <div class="card-heading">An Otter Essay</div>
     <p>
-      Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater.
+      Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are their powerful webbed feet, which allow them to swim gracefully, and their seal-like ability to hold their breath underwater for extended periods.
     </p>
   </div>
 </body>

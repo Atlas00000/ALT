@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scissors | URL Shortening</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 0 0 30px 30px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #333;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .cta-btn:hover {
+      background: #ffdb4d;
+      transform: scale(1.05);
+    }
+
+    /* Features Section */
+    .features {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .feature-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    /* Footer */
+    .footer {
+      background: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 50px;
+      border-radius: 30px 30px 0 0;
+    }
+
+    .footer nav a {
+      color: white;
+      margin: 0 15px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .footer nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .feature-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Shorten & Share Links with Ease</h1>
+      <p>Scissors helps you transform long URLs into shareable, trackable links.</p>
+      <button class="cta-btn">Try for Free</button>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <h2>Why Choose Scissors?</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Fast & Reliable</h3>
+          <p>Shorten URLs instantly with top-tier security.</p>
+        </div>
+        <div class="card">
+          <h3>Track Performance</h3>
+          <p>Monitor link clicks and user engagement in real time.</p>
+        </div>
+        <div class="card">
+          <h3>Easy to Share</h3>
+          <p>Generate compact, easy-to-remember links.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Scissors. All rights reserved.</p>
+      <nav>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
